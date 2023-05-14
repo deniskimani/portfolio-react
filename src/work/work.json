@@ -1,0 +1,53 @@
+{
+    "futurefast":
+        {
+            "title":"Engineer",
+            "company": {
+                "name":"Futurefast Technologies",
+                "url":"https://futurefast.co.ke/"
+            },
+            "period":{
+                "from":{
+                    "month":"July",
+                    "year":"2019"
+                },
+                "to":{
+                    "month":"January",
+                    "year":"2020"
+                }
+
+            },
+            "responsibilities":[
+                "Write modern, performant, maintainable code for a diverse array of client and internal projects",
+                "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, React, WordPress, and Vue",
+                "Communicate with teams of engineers, designers, producers, and clients on a daily basis"
+            ]
+            
+        },
+
+        "oaknet":
+        {
+            "title":"Intern",
+            "company": {
+                "name":"Oaknet Business Limited",
+                "url":"https://oaknetbusiness.com/"
+            },
+            "period":{
+                "from":{
+                    "month":"May",
+                    "year":"2019"
+                },
+                "to":{
+                    "month":"June",
+                    "year":"2019"
+                }
+
+            },
+            "responsibilities":[
+                
+            ]
+            
+        }
+
+    
+}

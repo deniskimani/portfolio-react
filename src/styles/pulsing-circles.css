@@ -1,0 +1,27 @@
+.pulsing-circle{
+    display: grid;
+    place-content: center;
+}
+#container{
+    width: 600px;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.circle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: deepskyblue;
+    position: absolute;
+    opacity: 0;
+}
+.item{
+    z-index: 100;
+    padding: 5px;
+}
+.item img {
+    width: 150px;
+}

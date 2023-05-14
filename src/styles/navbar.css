@@ -1,0 +1,47 @@
+@import url("./index.css");
+
+.navbar{
+
+    display: flex;
+    background-color: var(--faded-dark-purple);
+    padding: 15px 50px;
+
+}
+.navbar ol{
+    
+    display: flex;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+.navbar li::marker {
+    color: var(--light-purple);  
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+}
+.navbar li {
+   padding: 4px 10px ;
+   font-size: 13px;
+   color: var(--bright-slate);
+}
+a {
+   color: var(--bright-slate);
+   text-decoration: none;
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    margin-left: auto;
+    margin-right: 15px;
+}
+.resume{
+    margin-right: 0;
+    margin-top: 16px;
+}
+.resume-button{
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 13px;
+    border: 1px solid var(--light-purple);
+}
+

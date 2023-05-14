@@ -1,0 +1,24 @@
+.home{
+    margin-top: 50px;
+}
+.home p{
+    max-width: 570px;
+}
+.home h2{
+    font-size: 60px;
+    margin: 0 0;
+    color: var(--bright-slate);
+}
+.home h3{
+    font-size: 60px;
+    color: var(--slate);
+    margin: 10px 0;
+
+}
+
+.home p {
+    margin-top: 30px;
+    font-size: 18px;
+    color: var(--slate);
+}
+
