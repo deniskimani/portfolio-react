@@ -57,18 +57,19 @@
 
     width: 250px;
     height: 250px;
-    border-radius: 7px;
+    border-radius: 5px;
 
     
 }
 #overlay{
     width: 250px;
     height: 250px;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: var(--transparent-purple);
     margin: auto;
     position: relative;
     top: -253px;
+    transition: background-color 950ms;
 }
 .moving-border{
     width: 250px;
@@ -78,7 +79,9 @@
     left: 15px;
     top: 15px;
     z-index: -10;
-    border-radius: 7px;
+    border-radius: 5px;
+    transition: all 450ms;
+    
 }
 
 .remove-bg{
@@ -89,10 +92,15 @@
     top:10px !important;
 }
 .technologies{
-    display: inline-block;
+    display: flex;
+    color: var(--slate);
 }
 .technologies ul:first-child{
     float: left;
+    width: 50%;
+}
+.technologies ul:last-child{
+    float: right;
     width: 50%;
 }
 
@@ -102,4 +110,160 @@
 }
 .technologies li {
     padding-left: 7px;
+    font-family: 'Fira Code', monospace;
+    font-size: 15px;
 }
+
+@media only screen and (max-width: 920px) {
+    .about-me h2::after{
+        top: -15px;
+        left: 35%;
+        background-color: var(--navy);
+        width: 63%;
+    }
+    
+    .styled-pic img {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    #overlay{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: -253px;
+    }
+    .moving-border{
+        width: 250px;
+        height: 250px; 
+    }
+    .about-info{
+        width: 55%;
+    }
+    .styled-pic{ 
+        width: 40%;     
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .about-me h2::after{
+        top: -15px;
+        left: 35%;
+        background-color: var(--navy);
+        width: 63%;
+    }
+    
+    .styled-pic img {
+        width: 180px;
+        height: 180px;
+        margin-top: 50px;
+    }
+    #overlay{
+        width: 180px;
+        height: 180px;
+        position: relative;
+        top: -183px;
+    }
+    .moving-border{
+        width: 180px;
+        height: 180px; 
+    }
+    .about-info{
+        width: 60%;
+    }
+    .styled-pic{ 
+        width: 40%;     
+    }
+    
+}
+
+@media only screen and (max-width: 720px) {
+    .about-me h2::after{
+        display: none;
+    }
+    .about-me{
+        display: block;
+    }
+    .styled-pic img {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    #overlay{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: -253px;
+    }
+    .moving-border{
+        width: 250px;
+        height: 250px; 
+    }
+    .about-info{
+        width: 100%;
+    }
+    .styled-pic{ 
+        width: 100%;     
+    }
+    
+}
+
+@media only screen and (max-width: 540px) {
+
+    
+    .about-me{
+        display: block;
+    }
+    .styled-pic img {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    #overlay{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: -253px;
+    }
+    .moving-border{
+        width: 250px;
+        height: 250px; 
+    }
+    .about-info{
+        width: 100%;
+    }
+    .styled-pic{ 
+        width: 100%;     
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    
+    .about-me{
+        display: block;
+    }
+    .styled-pic img {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    #overlay{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: -253px;
+    }
+    .moving-border{
+        width: 250px;
+        height: 250px; 
+    }
+    .about-info{
+        width: 100%;
+    }
+    .styled-pic{ 
+        width: 100%;     
+    }
+    
+}
+
+

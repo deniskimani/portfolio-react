@@ -1,32 +1,79 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import Oaknet from "./work/Oaknet";
-import Fututrefast from "./work/Fututrefast";
-import BlueReveal from "./work/BlueReveal";
-import Deskim from "./work/Deskim";
-import Freelance from "./work/Freelance";
+import "../styles/work-places.css";
 
-const WorkPlaces = () => {
+import Experience from "./work/Experience";
+import { useState } from "react";
+
+const WorkPlaces = ({ jobs }) => {
+  const [job, setJob] = useState(jobs.oaknet);
+  function onClick(e) {
+    const employer = e.currentTarget.getAttribute("data-value");
+    setJob(jobs[employer]);
+    highlight(e);
+  }
+
+  function highlight(e) {
+    const element = document
+      .querySelector(".work-navbar")
+      .querySelectorAll("button");
+
+    console.log(element);
+
+    element.forEach((element) => {
+      element.classList.remove("highlighted");
+    });
+    const className = e.target.className;
+    const link = document.querySelector(`.${className}`);
+
+    link.classList.add("highlighted");
+  }
   return (
     <div className="work-places">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
-      <div className="work-navbar">
-        <span>
-          <Link to="/oaknetBusiness">Oaknet Business</Link>
-          <Link to="/futureFast">FutureFast Technologies</Link>
-          <Link to="/blueReveal">BlueReveal</Link>
-          <Link to="/deskimHardware">Deskim Hardware</Link>
-          <Link to="/freelance">Freelance</Link>
-        </span>
-      </div>
-      <div className="router-view">
-        <Routes>
-          <Route element={<Oaknet />} path="/oaknetBusines" />
-          <Route element={<Fututrefast />} path="/futureFast" />
-          <Route element={<BlueReveal />} path="/blueReveal" />
-          <Route element={<Deskim />} path="/deskimHardware" />
-          <Route element={<Freelance />} path="/freelance" />
-        </Routes>
+      <div className="work-view">
+        <div className="work-navbar">
+          <button
+            className="oaknet highlighted"
+            data-value="oaknet"
+            onClick={(e) => onClick(e)}
+          >
+            Oaknet Business
+          </button>
+
+          <button
+            className="futurefast"
+            data-value="futurefast"
+            onClick={(e) => onClick(e)}
+          >
+            FutureFast Tech
+          </button>
+
+          <button
+            className="blue-reveal"
+            data-value="bluereveal"
+            onClick={(e) => onClick(e)}
+          >
+            BlueReveal
+          </button>
+
+          <button
+            className="deskim"
+            data-value="deskim"
+            onClick={(e) => onClick(e)}
+          >
+            Deskim Hardware
+          </button>
+
+          <button
+            className="freelance"
+            data-value="freelance"
+            onClick={(e) => onClick(e)}
+          >
+            Freelance
+          </button>
+        </div>
+        <div className="router-view">
+          <Experience job={job} />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,157 @@
+.work-places {
+    width: 75%;
+    margin: 100px auto;
+}
+.work-places h2::before{
+    content: "02.";
+    padding-right: 7px;
+    font-size: 22px;
+    color: var(--light-purple);
+    font-weight: 400;
+    font-family: 'Fira Code', monospace;
+
+}
+
+
+.work-view li::marker{
+    content: '\25B9';
+    color: var(--light-purple);
+}
+.work-view ul{
+    padding-left: 10px;
+}
+.work-view li {
+    padding-left: 20px;
+    font-size: 15px;
+}
+.work-view .company{
+    color: var(--light-purple) ;
+}
+.work-view .company a{
+    color: var(--light-purple);
+
+}
+.work-view .title{
+    color: var(--bright-slate);
+}
+.work-view .period{
+    font-family: 'Fira Code', monospace;
+    font-size: 15px;
+}
+.work-places h2::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: -15px;
+    left: 44%;
+    width: 50%;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--navy);
+
+}
+.work-view{
+    display: flex;
+}
+.work-view{
+    color: var(--slate);
+}
+.work-view li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.work-navbar{
+    width: 35%;
+
+}
+.work-navbar {
+
+    margin-top: 20px;
+}
+
+.work-navbar button {
+    font-family: 'Fira Code', monospace;
+    color: var(--bright-slate);
+    padding-left: 20px;
+    width: 90%;
+    font-size: 13px;
+    text-align:left;
+    display: block;
+    padding: 12px 20px;
+    background-color: #ffffff00;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: 2px solid var(--lightest-slate);
+    
+}
+.highlighted{
+    border-left: 2px solid var(--light-purple) !important;
+    color: var(--light-purple) !important;
+    background-color: var(--transparent-slate)!important;
+
+}
+.router-view{
+    margin-left: 30px;
+    width: 60%;
+}
+
+@media only screen and (max-width: 720px) {
+    .work-places{
+        width: 100%;
+    }
+    .work-places h2::after{
+        
+        display: none;
+    
+    }
+    .work-view{
+        display: block;
+
+    }
+    .router-view{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .work-navbar{
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        
+    }
+    .work-navbar button{
+
+        padding: 5px 20px;
+        border-left: none;
+        margin-bottom: 5px;
+    }
+    .highlighted{
+
+        border-left: none !important;
+        border-top: 2px solid var(--light-purple) !important;
+        color: var(--light-purple) !important;
+        background-color: var(--transparent-slate)!important;
+
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    .work-places{
+        width: 100%;
+    }
+    
+    .work-view{
+        display: block;
+
+    }
+    .router-view{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .work-navbar{
+
+        width: 100%;
+    }
+    
+    
+}

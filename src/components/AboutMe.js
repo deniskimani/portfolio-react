@@ -54,8 +54,8 @@ const AboutMe = () => {
             . My main focus is building accessible products and digital
             experiences for clients in need.
           </p>
-          <p className="technologies">
-            Here are a few technologies I've been working with recently:
+          <p>Here are a few technologies I've been working with recently:</p>
+          <div className="technologies">
             <ul>
               <li>JavaScript (ES6+)</li>
               <li>React</li>
@@ -65,7 +65,7 @@ const AboutMe = () => {
               <li>WordPress</li>
               <li>Vue</li>
             </ul>
-          </p>
+          </div>
         </div>
         <div className="styled-pic">
           <img src={photo} alt="pic" />

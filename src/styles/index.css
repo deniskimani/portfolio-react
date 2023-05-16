@@ -6,9 +6,12 @@
   --bright-slate: #ccd6f6;
   --light-purple: #cb80ff;
   --transparent-purple:rgba(144, 26, 228, 0.478);
+  --lighter-dark-purple:#1a1149;
   --slate: #8892b0;
+  --lightest-slate: #8892b06e;
   --navy: #313542;
   --no-bg:#1a51f400;
+  --transparent-slate: #ffffff1a ;
 
 }
 body {
@@ -37,5 +40,25 @@ h1{
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--slate); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-purple); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-purple); 
+}
 

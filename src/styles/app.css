@@ -1,3 +1,18 @@
 .main-pages{
     padding: 0 14%;
 }
+
+@media screen and (max-width: 720px)  {
+    
+    .main-pages{
+        padding: 0 7%;
+    }
+}
+
+
+@media screen and (max-width: 540px)  {
+    
+    .main-pages{
+        padding: 0 5%;
+    }
+}

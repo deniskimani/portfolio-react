@@ -1,6 +1,7 @@
 {
     "futurefast":
-        {
+        {   
+            "id":1,
             "title":"Engineer",
             "company": {
                 "name":"Futurefast Technologies",
@@ -8,12 +9,12 @@
             },
             "period":{
                 "from":{
-                    "month":"July",
-                    "year":"2019"
+                    "date":"July 2019"
+
                 },
                 "to":{
-                    "month":"January",
-                    "year":"2020"
+                    "date":"January 2020"
+
                 }
 
             },
@@ -27,6 +28,7 @@
 
         "oaknet":
         {
+            "id":2,
             "title":"Intern",
             "company": {
                 "name":"Oaknet Business Limited",
@@ -34,12 +36,85 @@
             },
             "period":{
                 "from":{
-                    "month":"May",
-                    "year":"2019"
+                    "date":"May 2019"
+
                 },
                 "to":{
-                    "month":"June",
-                    "year":"2019"
+                    "date":"June 2019"
+
+                }
+
+            },
+            "responsibilities":[
+                
+            ]
+            
+        },
+
+        "bluereveal":
+        {
+            "id":3,
+            "title":"Lead Engineer",
+            "company": {
+                "name":"BlueReveal Tech start-up",
+                "url":"https://oaknetbusiness.com/"
+            },
+            "period":{
+                "from":{
+                    "date":"March 2020"
+
+                },
+                "to":{
+                    "date":"January 2021"
+
+                }
+
+            },
+            "responsibilities":[
+                
+            ]
+            
+        },
+        "freelance":
+        {
+            "id":4,
+            "title":"Software Engineer",
+            "company": {
+                "name":"Freelance Upwork",
+                "url":"https://oaknetbusiness.com/"
+            },
+            "period":{
+                "from":{
+                    "date":"January 2020"
+                    
+                },
+                "to":{
+                    "date":"To date"
+
+                }
+
+            },
+            "responsibilities":[
+                
+            ]
+            
+        },
+        "deskim":
+        {
+            "id":5,
+            "title":"Director",
+            "company": {
+                "name":"Deskim Hardware Limited",
+                "url":"https://oaknetbusiness.com/"
+            },
+            "period":{
+                "from":{
+                    "date":"August 2021"
+
+                },
+                "to":{
+                    "date":"January 2023"
+
                 }
 
             },
