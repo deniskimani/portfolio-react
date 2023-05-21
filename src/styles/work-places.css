@@ -1,3 +1,4 @@
+@import url("./index.css");
 .work-places {
     width: 75%;
     margin: 100px auto;
@@ -11,7 +12,6 @@
     font-family: 'Fira Code', monospace;
 
 }
-
 
 .work-view li::marker{
     content: '\25B9';
@@ -44,10 +44,10 @@
     position: relative;
     top: -15px;
     left: 44%;
-    width: 50%;
+    width: 40%;
     height: 1px;
     margin-left: 20px;
-    background-color: var(--navy);
+    background-color: var(--lightest-slate);
 
 }
 .work-view{
@@ -60,13 +60,12 @@
     margin-bottom: 10px;
     font-size: 15px;
 }
-.work-navbar{
-    width: 35%;
 
-}
 .work-navbar {
-
+    width: 200px;
     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px ;
 }
 
 .work-navbar button {
@@ -88,12 +87,13 @@
 .highlighted{
     border-left: 2px solid var(--light-purple) !important;
     color: var(--light-purple) !important;
-    background-color: var(--transparent-slate)!important;
+    background-color: var(--navish-purple)!important;
 
 }
 .router-view{
     margin-left: 30px;
     width: 60%;
+    min-height: 300px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -117,6 +117,7 @@
         display: flex;
         overflow-x: auto;
         width: 100%;
+        margin-left: 0%;
         
     }
     .work-navbar button{

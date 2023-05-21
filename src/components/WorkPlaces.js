@@ -27,7 +27,7 @@ const WorkPlaces = ({ jobs }) => {
     link.classList.add("highlighted");
   }
   return (
-    <div className="work-places">
+    <div className="work-places" id="jobs">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
       <div className="work-view">
         <div className="work-navbar">

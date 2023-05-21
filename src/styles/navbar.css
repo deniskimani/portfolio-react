@@ -28,6 +28,9 @@ a {
    color: var(--bright-slate);
    text-decoration: none;
 }
+.navbar a:hover{
+    color: var(--light-purple);
+}
 .logo{
     margin-right: auto;
 }

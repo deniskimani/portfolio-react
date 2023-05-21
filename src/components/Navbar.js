@@ -1,7 +1,6 @@
 import menu from "../assets/menu.png";
 import close from "../assets/close.png";
 import resume from "../assets/Denis_Mwaura_E.pdf";
-import ScrollReveal from "scrollreveal";
 
 import "../styles/navbar.css";
 
@@ -28,16 +27,16 @@ const Navbar = () => {
       <div className="links">
         <ol>
           <li>
-            <a href="hj">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="hjn">Experience</a>
+            <a href="#jobs">Experience</a>
           </li>
           <li>
-            <a href="dfg">Work</a>
+            <a href="#projects">Work</a>
           </li>
           <li>
-            <a href="tyu">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ol>
       </div>

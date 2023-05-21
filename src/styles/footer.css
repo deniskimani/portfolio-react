@@ -1,0 +1,30 @@
+
+.footer{
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--slate);
+    margin-bottom: 30px;
+}
+
+.footer a:hover{
+    color: var(--light-purple);
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.footer li{
+    list-style: none;
+    padding: 10px;
+    color: var(--slate);
+}
+
+@media screen and (min-width: 720px) {
+
+    .social-links{
+        display: none;
+    }
+    
+}

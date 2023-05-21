@@ -15,7 +15,7 @@ const AboutMe = () => {
     movingBorder.classList.remove("move-border");
   }
   return (
-    <div className="about-me">
+    <div className="about-me" id="about">
       <h2 className="numbered-heading first-heading">About Me</h2>
       <div className="info-pic-container">
         <div className="about-info">
@@ -55,17 +55,15 @@ const AboutMe = () => {
             experiences for clients in need.
           </p>
           <p>Here are a few technologies I've been working with recently:</p>
-          <div className="technologies">
-            <ul>
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Node.js</li>
-            </ul>
-            <ul>
-              <li>WordPress</li>
-              <li>Vue</li>
-            </ul>
-          </div>
+
+          <ul className="technologies">
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+
+            <li>WordPress</li>
+            <li>Vue</li>
+          </ul>
         </div>
         <div className="styled-pic">
           <img src={photo} alt="pic" />

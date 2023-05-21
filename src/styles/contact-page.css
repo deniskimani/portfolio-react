@@ -1,0 +1,65 @@
+
+.contact{
+    width: 60%;
+    margin: 120px auto;
+    text-align: center;
+    color: var(--bright-slate);
+}
+
+.overline{
+    color: var(--light-purple);
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+
+.overline::before{
+    content: "04.";
+    padding-right: 7px;
+}
+
+.contact p {
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+.contact-btn {
+
+    border-radius: 2px;
+    padding: 15px 25px;
+    font-size: 13px;
+    color: var(--light-purple);
+    border: 1px solid var(--light-purple);
+    background-color: var(--dark-purple);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 200ms;
+
+
+}
+
+.contact-btn:hover {
+    background-color: var(--navish-purple);
+    color: var(--bright-slate);
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 3px var(--light-purple); 
+}
+
+.contact-btn:hover {
+   background-color: var(--navish-purple);
+   color: var(--bright-slate);
+   top: -3px;
+   left: -3px;
+}
+
+
+@media screen and (max-width:720px) {
+    
+    .contact{
+        width: 80%;
+
+    }
+
+}

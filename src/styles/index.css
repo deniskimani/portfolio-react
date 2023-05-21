@@ -2,16 +2,23 @@
 
 :root{
   --dark-purple: #100a2f;
-  --faded-dark-purple : #100932a8;
+  --faded-dark-purple : #100932c2;
+  --bright-purple:#2d2670;
   --bright-slate: #ccd6f6;
   --light-purple: #cb80ff;
-  --transparent-purple:rgba(144, 26, 228, 0.478);
+  --transparent-purple:rgba(97, 22, 182, 0.504);
+  --navish-purple: #261a6c;
   --lighter-dark-purple:#1a1149;
   --slate: #8892b0;
   --lightest-slate: #8892b06e;
   --navy: #313542;
   --no-bg:#1a51f400;
+  --purple-overlay:#0b0b44bf;
   --transparent-slate: #ffffff1a ;
+  --font-mono: 'Fira Code', monospace;
+  --font-roboto:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 
 }
 body {
