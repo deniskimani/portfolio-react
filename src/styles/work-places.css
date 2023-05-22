@@ -3,13 +3,23 @@
     width: 75%;
     margin: 100px auto;
 }
-.work-places h2::before{
+.work-places .numbered-heading::before{
     content: "02.";
-    padding-right: 7px;
-    font-size: 22px;
-    color: var(--light-purple);
-    font-weight: 400;
-    font-family: 'Fira Code', monospace;
+
+}
+
+.work-places .numbered-heading::after{
+
+    top: 18px;
+    left: 300px;
+    width: 50%;
+
+}
+
+.highlighted{
+    border-left: 2px solid var(--light-purple) !important;
+    color: var(--light-purple) !important;
+    background-color: var(--navish-purple)!important;
 
 }
 
@@ -38,41 +48,39 @@
     font-family: 'Fira Code', monospace;
     font-size: 15px;
 }
-.work-places h2::after{
-    content: "";
-    display: block;
-    position: relative;
-    top: -15px;
-    left: 44%;
-    width: 40%;
-    height: 1px;
-    margin-left: 20px;
-    background-color: var(--lightest-slate);
 
-}
 .work-view{
-    display: flex;
-}
-.work-view{
+    display: grid;
     color: var(--slate);
+    grid-template-columns: repeat(11,1fr);
+    gap: 10px;
+    min-height: 400px;
 }
+
+.work-navbar {
+
+    grid-column: 1/span 5;
+    margin: 25px 20px;
+}
+
+.router-view{
+    grid-column: -1/-7;
+}
+
+
+
 .work-view li{
     margin-bottom: 10px;
     font-size: 15px;
 }
 
-.work-navbar {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px ;
-}
+
 
 .work-navbar button {
     font-family: 'Fira Code', monospace;
     color: var(--bright-slate);
     padding-left: 20px;
-    width: 90%;
+    width: 70%;
     font-size: 13px;
     text-align:left;
     display: block;
@@ -84,16 +92,41 @@
     border-left: 2px solid var(--lightest-slate);
     
 }
-.highlighted{
-    border-left: 2px solid var(--light-purple) !important;
-    color: var(--light-purple) !important;
-    background-color: var(--navish-purple)!important;
+
+
+
+@media only screen and (max-width: 1220px) {
+
+    .work-navbar button {
+        width: 80%;
+    }
+
+    .work-places .numbered-heading::after{
+
+        top: 18px;
+        left: 300px;
+        width: 45%;
+    
+    }
 
 }
-.router-view{
-    margin-left: 30px;
-    width: 60%;
-    min-height: 300px;
+@media only screen and (max-width: 950px) {
+
+    .work-navbar button {
+        width: 100%;
+    }
+
+    .work-places{
+        width: 85%;
+    }
+    .work-places .numbered-heading::after{
+
+        top: 18px;
+        left: 300px;
+        width: 37%;
+    
+    }
+
 }
 
 @media only screen and (max-width: 720px) {

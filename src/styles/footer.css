@@ -18,7 +18,11 @@
 .footer li{
     list-style: none;
     padding: 10px;
+    font-size: 15px;
     color: var(--slate);
+}
+.footer li:hover{
+    color: var(--light-purple);
 }
 
 @media screen and (min-width: 720px) {

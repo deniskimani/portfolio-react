@@ -4,16 +4,24 @@ const Footer = () => {
   return (
     <div className="footer">
       <ul className="social-links">
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
+        <li>
+          <i class="lni lni-instagram-original"></i>
+        </li>
+        <li>
+          <i class="lni lni-twitter"></i>
+        </li>
+        <li>
+          <i class="lni lni-linkedin"></i>
+        </li>
+        <li>
+          <i class="lni lni-github"></i>
+        </li>
       </ul>
 
       <p>
         Built By{" "}
         <a
-          href="https://github.com/denisKimanii"
+          href="https://github.com/deniskimani/portfolio-react"
           target="_blank"
           rel="noopener noreferrer"
         >

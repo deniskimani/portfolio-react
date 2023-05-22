@@ -10,27 +10,27 @@
 
 }
 
-.jobs h2::before{
+.jobs .numbered-heading::before{
     content: "03.";
-    padding-right: 7px;
-    font-size: 22px;
-    color: var(--light-purple);
-    font-weight: 400;
-    font-family: 'Fira Code', monospace;
+
 }
 
-.jobs h2::after{
-    content: "";
-    display: block;
-    position: relative;
-    top: -15px;
-    left: 40%;
-    width: 60%  ;
-    height: 1px;
-    z-index: -1;
-    margin-left: 20px;
-    background-color: var(--lightest-slate);
+.jobs .numbered-heading::after{
+
+    top: 18px;
+    left: 345px;
+    width: 60%;
+
 }
+
+.extra-work .numbered-heading::before{
+    display: none;
+}
+
+.extra-work .numbered-heading::after{
+    display: none;
+}
+
 ul {
     padding-left: 0;
     display: block;
@@ -212,6 +212,23 @@ ul {
     .project-cards{
         grid-template-columns: repeat(2,1fr);
     }
+
+    .jobs .numbered-heading::after{
+
+        width: 55%;
+    
+    }
+}
+
+@media screen and (max-width:1030px) {
+    
+
+
+    .jobs .numbered-heading::after{
+
+        width: 45%;
+    
+    }
 }
 
 @media only screen and (max-width: 920px) {
@@ -227,6 +244,12 @@ ul {
     }
     .second .project-image{
         grid-column: -1/-9;
+    }
+
+    .jobs .numbered-heading::after{
+
+        width: 40%;
+    
     }
 }
 

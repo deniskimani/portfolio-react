@@ -4,31 +4,7 @@
     display: inline-block;
 
 }
-.numbered-heading{
-    color: var(--bright-slate);
-    font-size: 28px;
-}
-.about-me h2::before{
-    content: "01.";
-    padding-right: 7px;
-    font-size: 22px;
-    color: var(--light-purple);
-    font-weight: 400;
-    font-family: var(--font-mono);
 
-}
-.about-me h2::after{
-    content: "";
-    display: block;
-    position: relative;
-    top: -15px;
-    left: 25%;
-    width: 35%;
-    height: 1px;
-    margin-left: 20px;
-    background-color: var(--lightest-slate);
-
-}
 
 .about-me p {
     color: var(--slate);
@@ -109,6 +85,8 @@
     font-size: 12px;
 }
 
+
+
 @media only screen and (max-width: 920px) {
     
     .styled-pic img {
@@ -130,13 +108,7 @@
         
     }
 
-    .about-me h2::after{
-            
-        left: 35%;
-        width: 35%;
-        
-    
-    }
+
     
 }
 
