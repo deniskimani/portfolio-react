@@ -11,7 +11,7 @@
   </a>
 </p>
 
-![demo](https://raw.githubusercontent.com/deniskimani/portfolio-react/master/src/assets/close.png)
+![demo](https://raw.githubusercontent.com/deniskimani/portfolio-react/master/src/assets/demo.png)
 
 ## 🚨 Forking this repo (please read!)
 
