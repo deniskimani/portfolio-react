@@ -1,10 +1,18 @@
 @import url("./index.css");
 
 .navbar{
-
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     display: flex;
-    background-color: var(--faded-dark-purple);
     padding: 15px 50px;
+    z-index: 5;
+    
+
+}
+.backdrop-filter{
+    backdrop-filter: blur(5px);
 
 }
 .navbar ol{
@@ -13,6 +21,7 @@
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
 }
+
 
 .navbar li::marker {
     color: var(--light-purple);  
@@ -24,23 +33,24 @@
    font-size: 13px;
    color: var(--bright-slate);
 }
-a {
-   color: var(--bright-slate);
-   text-decoration: none;
-}
+
 .navbar a:hover{
     color: var(--light-purple);
 }
 .logo{
-    margin-right: auto;
+    margin: auto 0 auto;
+}
+.logo img{
+    width: 40px;
 }
 .links{
     margin-left: auto;
-    margin-right: 15px;
+
 }
 .resume{
-    margin-right: 0;
-    margin-top: 16px;
+    margin-left: 20px;
+    list-style: none;
+    padding-right: 0 !important;
 }
 .resume-button{
     border-radius: 4px;
@@ -51,19 +61,27 @@ a {
 
 .menu{
     display: none;
+    margin-left: auto;
 }
 
 .overlay-nav{
     display: none;
+
 }
 
 .block{
     display: block !important;
-}
 
-@media only screen and (max-width: 724px) {
+}
+/* .hidden{
+    display: none;
+} */
+
+@media only screen and (max-width: 720px) {
     .navbar{
+        position: relative;
         padding: 15px 5%;
+        overflow: hidden;
     }
     .links{
         display: none;  
@@ -78,7 +96,7 @@ a {
         margin-right: 0;
         display: block;
         border: none;
-        background-color: var(--dark-purple);
+        background-color: var(--no-bg);
     }
 
     .overlay-for-nav{
@@ -86,6 +104,7 @@ a {
         display: none;
         position: fixed;
         top: 0;
+
         width: 100vw;
         height: 100vh;
         left: 0;
@@ -95,11 +114,10 @@ a {
     .overlay-nav{
         display: block;
         height: 110vh;
-        width: 55%;
+        width: 60%;
         position: absolute;
         right: 0;
         top:0;
-        z-index: 100;
         box-shadow: -10px 0px 10px 1px var(--dark-purple);
         background-color: var(--lighter-dark-purple);
 
@@ -119,8 +137,8 @@ a {
     }
    .close{
     float: right;
-    margin: 20px 40px;
-    background-color: var(--lighter-dark-purple);
+    margin: 24px 23px;
+    background-color: var(--no-bg);
     border: none;
    }
    .close img{
@@ -145,7 +163,7 @@ a {
         
         display: block;
         border: none;
-        background-color: var(--dark-purple);
+
     }
     
 }

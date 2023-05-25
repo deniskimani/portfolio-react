@@ -1,27 +1,41 @@
 
 .home{
-    margin-top: 50px;
+    margin: 190px 0 90px 0;
 }
 .home p{
-    max-width: 570px;
+    max-width: 590px;
 }
 .home h2{
-    font-size: 60px;
+    font-size: clamp(40px, 8vw, 80px);;
     margin: 0 0;
     color: var(--bright-slate);
 }
 .home h3{
-    font-size: 60px;
+    font-size: clamp(40px, 8vw, 80px);;
     color: var(--slate);
     margin: 10px 0;
 
 }
 
 .home p {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 70px;
     font-size: 18px;
     color: var(--slate);
 }
+
+.home a {
+    border: 1px solid var(--light-purple);
+    font-size: 13px;
+    padding: 15px 25px;
+    border-radius: 3px;
+    color: var(--light-purple);
+    background-color: var(--no-bg);
+    transition: background-color 250ms;
+}
+ .home a:hover {
+    background-color: var(--navy);
+ }
 
 .downwards-left{
     width: 40px;
@@ -104,7 +118,9 @@
 }
 
 @media only screen and (max-width: 720px) {
-    
+    .home {
+        margin: 90px 0;
+    }
     .downwards-left{
         display: none;
     }

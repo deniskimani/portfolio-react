@@ -1,6 +1,6 @@
-import "../styles/home.css";
+import "../styles/hero.css";
 
-const Home = () => {
+const Hero = () => {
   return (
     <div className="home">
       <h1>Hello, my name is</h1>
@@ -11,8 +11,9 @@ const Home = () => {
         exceptional digital experiences. I'm currently working on building
         accessible, human-centered products as a freelance software developer.
       </p>
+      <a href="mailto:denismwaura96@gmail.com">Get in Touch</a>
     </div>
   );
 };
 
-export default Home;
+export default Hero;

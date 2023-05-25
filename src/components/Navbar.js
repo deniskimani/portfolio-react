@@ -1,23 +1,34 @@
+import logo from "../assets/M.png";
 import menu from "../assets/menu.png";
 import close from "../assets/close.png";
 import resume from "../assets/Denis_Mwaura_E.pdf";
+import { Link } from "react-scroll";
+import "../styles/SmoothScroll.css"; // Create this CSS file for custom styles
 
 import "../styles/navbar.css";
 
 const Navbar = () => {
-  function openSideNav() {
+  function openSideNav(e) {
+    e.preventDefault();
     const sideNav = document.querySelector(".overlay-for-nav");
+    const navbar = document.querySelector(".navbar");
+
+    navbar.classList.remove("backdrop-filter");
     sideNav.classList.add("block");
   }
   function closeSideNav() {
     const sideNav = document.querySelector(".overlay-for-nav");
+    const navbar = document.querySelector(".navbar");
+
+    navbar.classList.remove("hidden");
+    navbar.classList.add("backdrop-filter");
     sideNav.classList.remove("block");
   }
 
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="csk" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
 
       <button className="menu" type="button" onClick={openSideNav}>
@@ -27,29 +38,67 @@ const Navbar = () => {
       <div className="links">
         <ol>
           <li>
-            <a href="#about">About</a>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <a href="#jobs">Experience</a>
+            <Link
+              activeClass="active"
+              to="jobs"
+              spy={true}
+              smooth={true}
+              offset={-210}
+              duration={500}
+            >
+              Experience
+            </Link>
           </li>
           <li>
-            <a href="#projects">Work</a>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Work
+            </Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
+
+          <li className="resume">
+            <a
+              className="resume-button"
+              rel="noopener noreferrer"
+              href={resume}
+              target="_blank"
+            >
+              Resume
+            </a>
           </li>
         </ol>
       </div>
-      <div className="resume">
-        <a
-          className="resume-button"
-          rel="noopener noreferrer"
-          href={resume}
-          target="_blank"
-        >
-          Resume
-        </a>
-      </div>
+
       <div className="overlay-for-nav" onClick={closeSideNav}>
         <div className="overlay-nav">
           <button className="close" type="button" onClick={closeSideNav}>
@@ -58,16 +107,56 @@ const Navbar = () => {
           <div className="overlay-links">
             <ol>
               <li>
-                <a href="hj">About</a>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={closeSideNav}
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <a href="hjn">Experience</a>
+                <Link
+                  activeClass="active"
+                  to="jobs"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                  onClick={closeSideNav}
+                >
+                  Experience
+                </Link>
               </li>
               <li>
-                <a href="dfg">Work</a>
+                <Link
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onClick={closeSideNav}
+                >
+                  Work
+                </Link>
               </li>
               <li>
-                <a href="tyu">Contact</a>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onClick={closeSideNav}
+                >
+                  Contact
+                </Link>
               </li>
             </ol>
           </div>

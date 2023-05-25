@@ -4,16 +4,16 @@ const SideLinks = () => {
       <div orientation="left" className="downwards-left">
         <ul>
           <li>
-            <i class="lni lni-instagram-original"></i>
+            <i className="lni lni-instagram-original"></i>
           </li>
           <li>
-            <i class="lni lni-twitter"></i>
+            <i className="lni lni-twitter"></i>
           </li>
           <li>
-            <i class="lni lni-linkedin"></i>
+            <i className="lni lni-linkedin"></i>
           </li>
           <li>
-            <i class="lni lni-github"></i>
+            <i className="lni lni-github"></i>
           </li>
         </ul>
       </div>

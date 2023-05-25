@@ -5,7 +5,7 @@
   --faded-dark-purple : #100932c2;
   --bright-purple:#2d2670;
   --bright-slate: #ccd6f6;
-  --light-purple: #cb80ff;
+  --light-purple: #b141ff;
   --transparent-purple:rgba(97, 22, 182, 0.504);
   --navish-purple: #261a6c;
   --lighter-dark-purple:#1a1149;
@@ -45,6 +45,11 @@ h1{
   font-size: 16px;
   color: var(--light-purple);
   font-weight: 400;
+}
+
+a {
+  color: var(--bright-slate);
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {

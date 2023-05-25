@@ -67,6 +67,7 @@ const AboutMe = () => {
         </div>
         <div className="styled-pic">
           <img src={photo} alt="pic" />
+
           <div id="overlay" onMouseEnter={transition} onMouseLeave={undo}>
             <div className="moving-border"></div>
           </div>

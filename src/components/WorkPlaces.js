@@ -4,7 +4,7 @@ import Experience from "./work/Experience";
 import { useState } from "react";
 
 const WorkPlaces = ({ jobs }) => {
-  const [job, setJob] = useState(jobs.oaknet);
+  const [job, setJob] = useState(jobs.freelance);
   function onClick(e) {
     const employer = e.currentTarget.getAttribute("data-value");
     setJob(jobs[employer]);
@@ -32,11 +32,25 @@ const WorkPlaces = ({ jobs }) => {
       <div className="work-view">
         <div className="work-navbar">
           <button
-            className="oaknet highlighted"
-            data-value="oaknet"
+            className="freelance highlighted"
+            data-value="freelance"
             onClick={(e) => onClick(e)}
           >
-            Oaknet Business
+            Freelance
+          </button>
+          <button
+            className="deskim"
+            data-value="deskim"
+            onClick={(e) => onClick(e)}
+          >
+            Deskim Hardware
+          </button>
+          <button
+            className="blue-reveal"
+            data-value="bluereveal"
+            onClick={(e) => onClick(e)}
+          >
+            BlueReveal
           </button>
 
           <button
@@ -48,27 +62,11 @@ const WorkPlaces = ({ jobs }) => {
           </button>
 
           <button
-            className="blue-reveal"
-            data-value="bluereveal"
+            className="oaknet"
+            data-value="oaknet"
             onClick={(e) => onClick(e)}
           >
-            BlueReveal
-          </button>
-
-          <button
-            className="deskim"
-            data-value="deskim"
-            onClick={(e) => onClick(e)}
-          >
-            Deskim Hardware
-          </button>
-
-          <button
-            className="freelance"
-            data-value="freelance"
-            onClick={(e) => onClick(e)}
-          >
-            Freelance
+            Oaknet Business
           </button>
         </div>
         <div className="router-view">
