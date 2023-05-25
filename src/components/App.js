@@ -8,17 +8,10 @@ import Jobs from "./Jobs";
 import SideLinks from "./SideLinks";
 import Contact from "./Contact";
 import Footer from "./Footer";
+
 // import PulsingCircles from "./PulsingCircles";
 
 function App() {
-  window.scroll(function () {
-    const navbar = document.querySelector(".navbar");
-    if (this.scrollTop() > 50) {
-      navbar.addClass("backdrop-filter");
-    } else {
-      navbar.removeClass("backdrop-filter");
-    }
-  });
   return (
     <div className="App">
       <Navbar />

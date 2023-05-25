@@ -4,10 +4,21 @@ import close from "../assets/close.png";
 import resume from "../assets/Denis_Mwaura_E.pdf";
 import { Link } from "react-scroll";
 import "../styles/SmoothScroll.css"; // Create this CSS file for custom styles
-
 import "../styles/navbar.css";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const initialState = {
+    scroll: false,
+  };
+  const [scroll, setScroll] = useState(initialState.scroll);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 100);
+    });
+  }, []);
+
   function openSideNav(e) {
     e.preventDefault();
     const sideNav = document.querySelector(".overlay-for-nav");
@@ -20,13 +31,12 @@ const Navbar = () => {
     const sideNav = document.querySelector(".overlay-for-nav");
     const navbar = document.querySelector(".navbar");
 
-    navbar.classList.remove("hidden");
     navbar.classList.add("backdrop-filter");
     sideNav.classList.remove("block");
   }
 
   return (
-    <div className="navbar">
+    <div className={scroll ? "navbar scrolled" : "navbar"}>
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
