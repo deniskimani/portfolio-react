@@ -1,0 +1,29 @@
+{
+   "projects":[
+     {
+        "id":1,
+        "title":"Online-Examination-Registration",
+        "github":"https://github.com/deniskimani/Online-examination-registration",
+        "external":"",
+        "description":"This is a system used to register for examinations remotely rather than the tedious conventional on-ground registration.",
+        "tech":["PHP", "HTML", "CSS", "JavaScript"]
+    },
+    {
+        "id":2,
+        "title":"Interacative Rating component",
+        "github":"https://github.com/deniskimani/interactiverating",
+        "external":"",
+        "description":"This was a challenge to improve my skill with woth Javascript. Looking back I have come quite a long way in Javascript",
+        "tech":["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "id":3,
+        "title":"Powerpay",
+        "github":"https://github.com/deniskimani/powerpay",
+        "external":"",
+        "description":"This was a challenge to improve my skill with woth Javascript. Looking back I have come quite a long way in Javascript",
+        "tech":[ "PHP", "Laravel" ,"Blade", "CSS", "JavaScript"]
+    }
+]
+
+}

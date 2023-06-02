@@ -1,0 +1,11 @@
+.card:hover {
+    top: -5px;
+
+    .card-title{
+        color: var(--light-purple);
+    }
+}
+
+.card .tools {
+    font-family: var(--font-mono);
+}

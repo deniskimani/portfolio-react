@@ -3,6 +3,7 @@ import "../components/work/projects/timepicker/index.md";
 import { useEffect, useState } from "react";
 import Projects from "./Projects";
 import MarkdownParser from "./MarkdownParser";
+import extraProjects from "../components/work/projects/projects.json";
 
 const Jobs = () => {
   const fileName = "index.md";
@@ -20,7 +21,7 @@ const Jobs = () => {
   return (
     <>
       <MarkdownParser markdown={project} />
-      <Projects />
+      <Projects projects={extraProjects.projects} />
     </>
   );
 };

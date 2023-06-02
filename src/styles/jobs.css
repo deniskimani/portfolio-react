@@ -1,7 +1,8 @@
 @import url("./index.css");
+@import url("./projects.scss");
 .jobs{
     display: block;
-    margin-top: 40px;
+
 }
 
 .jobs h2{
@@ -68,7 +69,7 @@ ul {
     grid-template-columns: repeat(12, 1fr);
     -webkit-box-align: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .project-tech-list{
@@ -236,15 +237,17 @@ ul {
     transition: top 200ms;
 }
 .card .folder svg{
-    height: 60px;
+    height: 45px;
+    stroke: var(--light-purple);
 }
 .card .link-icon svg{
-    height: 25px;
+    height: 20px;
+    padding-left: 5px;
 }
 
-.card:hover {
-    top: -5px;
-}
+
+
+
 
 
 .link-icon{
@@ -252,10 +255,9 @@ ul {
     padding-top: 18px;
 }
 
-.tools{
-    display: flex;
-}
+
 .tools li{
+    display: inline-block;
     list-style: none;
     padding: 5px 5px;
 }

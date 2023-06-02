@@ -1,32 +1,48 @@
-import { IconExternal, IconFolder } from "./icons";
+import { IconExternal, IconFolder, IconGitHub } from "./icons";
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   return (
     <div>
       <div className="extra-work">
         <h2 className="numbered-heading">Other notable mentions</h2>
         <h4>view the archive</h4>
-
         <div className="project-cards">
-          <div className="card">
-            <div>
-              <span className="folder">
-                <IconFolder />
-              </span>
-              <span className="link-icon">
-                <IconExternal />
-              </span>
+          {projects.map((project) => (
+            <div className="card" key={project.id}>
+              <div>
+                <span className="folder">
+                  <IconFolder />
+                </span>
+                <span className="link-icon">
+                  {project.github.length !== 0 && (
+                    <a
+                      href={project.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IconGitHub />
+                    </a>
+                  )}
+                  {project.external.length !== 0 && (
+                    <a
+                      href={project.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IconExternal />
+                    </a>
+                  )}
+                </span>
+              </div>
+              <h3 className="card-title">{project.title}</h3>
+              <p>{project.description}</p>
+              <ul className="tools">
+                {project.tech.map((tech) => (
+                  <li key={tech}>{tech}</li>
+                ))}
+              </ul>
             </div>
-            <h3>Project title</h3>
-            <p>
-              kjfhfwiojwe ewiknd jdnkandka qeadakdnkda dkankdnankand nakjdnakda
-              adnka nadkjnad nakd a dnknd adkadfn afcjafdk fafkad
-            </p>
-            <ul className="tools">
-              <li>tool</li>
-              <li>tool</li>
-            </ul>
-          </div>
+          ))}
         </div>
       </div>
     </div>

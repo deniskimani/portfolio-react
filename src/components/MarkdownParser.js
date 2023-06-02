@@ -30,8 +30,6 @@ const MarkdownParser = ({ markdown }) => {
     // }, 1000);
   }, [markdown]);
 
-  console.log(tech);
-
   return (
     <div>
       <div className="jobs" id="projects">
