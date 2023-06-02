@@ -1,19 +1,50 @@
+import "../components/icons/index";
+import {
+  IconGitHub,
+  IconInsta,
+  IconLinkedin,
+  IconTwitter,
+} from "../components/icons/index";
 const SideLinks = () => {
   return (
     <div>
       <div orientation="left" className="downwards-left">
         <ul>
           <li>
-            <i className="lni lni-instagram-original"></i>
+            <a
+              href="https://www.instagram.com/mwaura__kimani/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconInsta />
+            </a>
           </li>
           <li>
-            <i className="lni lni-twitter"></i>
+            <a
+              href="https://twitter.com/mwaslito60"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconTwitter />
+            </a>
           </li>
           <li>
-            <i className="lni lni-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/denis-mwaura-b87305190/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconLinkedin />
+            </a>
           </li>
           <li>
-            <i className="lni lni-github"></i>
+            <a
+              href="https://github.com/deniskimani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconGitHub />
+            </a>
           </li>
         </ul>
       </div>

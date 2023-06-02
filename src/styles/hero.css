@@ -56,16 +56,22 @@
     padding: 0px;
     list-style: none;
 }
-.downwards-left li{
+.downwards-left li a svg{
     font-size: 20px;
     padding-bottom: 10px;
     transition: padding-bottom 500ms;
 }
+.downwards-left li a svg{
+    height: 20px;
+    padding-bottom: 10px;
+    transition: padding-bottom 500ms;
+}
 
-.downwards-left li:hover{
+.downwards-left li a svg:hover{
     padding-bottom: 20px;
     color: var(--light-purple);
 }
+
 
 .downwards-left ul::after{
     content: "";

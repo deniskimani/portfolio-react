@@ -1,3 +1,5 @@
+import { IconExternal, IconFolder } from "./icons";
+
 const Projects = () => {
   return (
     <div>
@@ -8,8 +10,12 @@ const Projects = () => {
         <div className="project-cards">
           <div className="card">
             <div>
-              <span className="folder">folder</span>
-              <span className="link-icon">link</span>
+              <span className="folder">
+                <IconFolder />
+              </span>
+              <span className="link-icon">
+                <IconExternal />
+              </span>
             </div>
             <h3>Project title</h3>
             <p>
