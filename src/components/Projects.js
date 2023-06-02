@@ -1,5 +1,3 @@
-import MarkdownParser from "./MarkdownParser";
-
 const Projects = () => {
   return (
     <div>

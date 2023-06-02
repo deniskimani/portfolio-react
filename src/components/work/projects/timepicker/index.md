@@ -12,4 +12,4 @@ tech:
   - Bootstrap
 ---
 
-I created this timepicker to provide myself nd other developers with a package that at the time was not available. It is a 12-hour clock system timepicker developed for Vue dvelopers.
+I created this timepicker to provide myself and other developers with a bootstrap timepicker input package that at the time was not available. It is a 12-hour clock system timepicker developed for Vue dvelopers.
