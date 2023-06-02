@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import placeholder from "../assets/placeholder.png";
 import "../components/icons/index";
 import timepicker from "../components/work/projects/timepicker/timepicker.png";
 import grayMatter from "gray-matter";
