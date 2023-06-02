@@ -60,9 +60,9 @@ const AboutMe = () => {
             <li>JavaScript (ES6+)</li>
             <li>React</li>
             <li>Node.js</li>
-
             <li>WordPress</li>
             <li>Vue</li>
+            <li>Express</li>
           </ul>
         </div>
         <div className="styled-pic">

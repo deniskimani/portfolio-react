@@ -1,0 +1,9 @@
+export { default as IconExternal } from "./IconExternal";
+export { default as IconFolder } from "../icons/IconFolder";
+export { default as IconGitHub } from "../icons/IconGithub";
+export { default as IconHex } from "../icons/IconHex";
+export { default as IconInsta } from "../icons/IconInsta";
+export { default as IconLinkedin } from "../icons/IconLinkedin";
+export { default as IconLoader } from "../icons/IconLoader";
+export { default as IconLogo } from "../icons/IconLogo";
+export { default as IconTwitter } from "../icons/IconTwitter";

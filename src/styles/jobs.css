@@ -129,6 +129,17 @@ ul {
 
 .project-links{
     padding: 7px 10px;
+
+}
+.project-links a svg {
+    padding: 10px;
+    height: 25px;
+    stroke: var(--bright-slate);
+    transition: all 250ms;
+}
+
+.project-links a svg:hover {
+    stroke: var(--light-purple);
 }
 
 .first .info-wrapper{

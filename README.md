@@ -2,7 +2,7 @@
   mwaurakimani.netlify.app - v1
 </h1>
 <p align="center">
-  Version on of <a href="https://mwaurakimani.netlify.app" target="_blank">mwaurakimani.netlify.app</a> built with <a href="https://react.dev/" target="_blank">Reaact</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  Version on of <a href="https://mwaurakimani.netlify.app" target="_blank">mwaurakimani.netlify.app</a> built with <a href="https://react.dev/" target="_blank">React</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
 <p align="center">
