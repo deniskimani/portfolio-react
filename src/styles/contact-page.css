@@ -1,7 +1,8 @@
 
 .contact{
-    width: 60%;
-    margin: 120px auto;
+    width: 50%;
+    line-height: 170%;
+    margin: 100px auto;
     text-align: center;
     color: var(--bright-slate);
 }
@@ -18,40 +19,29 @@
 }
 
 .contact p {
-    padding-top: 30px;
-    margin-bottom: 100px;
+
+    margin: 70px 0;
 }
 
 .contact-btn {
 
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 15px 25px;
     font-size: 13px;
     color: var(--light-purple);
     border: 1px solid var(--light-purple);
     background-color: var(--dark-purple);
-    position: relative;
-    top: 0;
-    left: 0;
     z-index: 1;
-    transition: all 200ms;
 
 
 }
 
-.contact-btn:hover {
-    background-color: var(--navish-purple);
-    color: var(--bright-slate);
-    top: -3px;
-    left: -3px;
-    box-shadow: 3px 3px var(--light-purple); 
-}
+
 
 .contact-btn:hover {
    background-color: var(--navish-purple);
-   color: var(--bright-slate);
-   top: -3px;
-   left: -3px;
+
+   
 }
 
 

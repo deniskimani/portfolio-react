@@ -22,16 +22,18 @@ const Navbar = () => {
   function openSideNav(e) {
     e.preventDefault();
     const sideNav = document.querySelector(".overlay-for-nav");
-    const navbar = document.querySelector(".navbar");
 
-    navbar.classList.remove("backdrop-filter");
+    
+
     sideNav.classList.add("block");
+
+
   }
   function closeSideNav() {
     const sideNav = document.querySelector(".overlay-for-nav");
     const navbar = document.querySelector(".navbar");
 
-    navbar.classList.add("backdrop-filter");
+
     sideNav.classList.remove("block");
   }
 
@@ -161,7 +163,7 @@ const Navbar = () => {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-170}
                   duration={500}
                   onClick={closeSideNav}
                 >

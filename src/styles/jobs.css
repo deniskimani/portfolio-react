@@ -28,6 +28,10 @@
 
 }
 
+.extra-work{
+    margin-bottom: 270px;
+}
+
 .extra-work .numbered-heading::before{
     display: none;
 }
