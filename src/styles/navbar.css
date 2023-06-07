@@ -73,9 +73,7 @@
     display: block !important;
 
 }
-.hidden{
-    display: none;
-}
+
 
 @media only screen and (max-width: 720px) {
     .navbar{

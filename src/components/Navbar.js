@@ -31,7 +31,7 @@ const Navbar = () => {
   }
   function closeSideNav() {
     const sideNav = document.querySelector(".overlay-for-nav");
-    const navbar = document.querySelector(".navbar");
+
 
 
     sideNav.classList.remove("block");
