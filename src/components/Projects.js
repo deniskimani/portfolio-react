@@ -4,7 +4,7 @@ const Projects = ({ projects }) => {
   return (
     <div>
       <div className="extra-work">
-        <h2 className="numbered-heading">Other notable mentions</h2>
+        <h2 className="numbered-heading">Other notable mentions </h2>
         <h4>view the archive</h4>
         <div className="project-cards">
           {projects.map((project) => (

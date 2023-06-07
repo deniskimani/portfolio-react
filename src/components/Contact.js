@@ -6,8 +6,7 @@ const Contact = () => {
       <h2 className="overline">What's Next?</h2>
       <h2 className="title ">Get In Touch</h2>
       <p>
-        I'm currently open to work and my inbox is always open. I would
-        appreciiate any interaction.
+        Hello I'm currently open to work
       </p>
 
       <a href="mailto:denismwaura96@gmail.com" className="contact-btn">

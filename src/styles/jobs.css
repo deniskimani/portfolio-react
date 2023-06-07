@@ -260,7 +260,9 @@ ul {
     display: inline-block;
     list-style: none;
     padding: 5px 5px;
+    font-size: 12px;
 }
+
 @media screen and (max-width:1230px) {
     
     .project-cards{
