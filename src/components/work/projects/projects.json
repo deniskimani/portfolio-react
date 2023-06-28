@@ -13,7 +13,7 @@
         "title":"Interacative Rating component",
         "github":"https://github.com/deniskimani/interactiverating",
         "external":"",
-        "description":"This was a challenge to improve my skill with woth Javascript. Looking back I have come quite a long way in Javascript",
+        "description":"This was a challenge to improve my skill in Javascript. Looking back I have come quite a long way in Javascript",
         "tech":["HTML", "CSS", "JavaScript"]
     },
     {
@@ -21,7 +21,7 @@
         "title":"Powerpay",
         "github":"https://github.com/deniskimani/powerpay",
         "external":"",
-        "description":"This was a challenge to improve my skill with woth Javascript. Looking back I have come quite a long way in Javascript",
+        "description":"This web application was platform for a client to advertise and sell sell their power solution products to consumers with a backend for staff. This project enhanced my understansding of RDBMS.",
         "tech":[ "PHP", "Laravel" ,"Blade", "CSS", "JavaScript"]
     }
 ]

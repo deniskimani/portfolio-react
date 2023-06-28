@@ -18,12 +18,10 @@ const Navbar = () => {
       setScroll(window.scrollY > 100);
     });
   }, []);
-
+  console.log(scroll)
   function openSideNav(e) {
     e.preventDefault();
     const sideNav = document.querySelector(".overlay-for-nav");
-
-    
 
     sideNav.classList.add("block");
 
@@ -31,9 +29,6 @@ const Navbar = () => {
   }
   function closeSideNav() {
     const sideNav = document.querySelector(".overlay-for-nav");
-
-
-
     sideNav.classList.remove("block");
   }
 
